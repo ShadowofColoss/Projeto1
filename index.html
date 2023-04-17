@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>website to keep your task up to day</title>
+        <link type="text/css" rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1>Task table</h1>
+            <div class="header">
+                <button type="button">+add another card</button>
+            </div>
+        </header>
+        <main>
+            <div id="to-do" class="to-do">
+                <title>to do</title>
+                <p id="no-cardInto-do" class="no-cardInto-do">no card added</p>
+                <div id="text_3" class="text">
+                    
+                </div>
+                <button onclick="addinto_do()" class="button-to_do" type="button">+add new card</button>
+            </div>
+
+            <div id="doing" class="doing">
+                <title>doing</title>
+                <p id="no-cardIndoing" class="no-cardIndoing">no card added</p>
+                <div id="text_2" class="text">
+                </div>
+                <button onclick="addinDoing()"class="button-doing" type="button">+add new card</button>
+            </div>  
+
+            <div id="done" class="done">
+                <title>done</title>
+                <p id="no-cardIndone" class="no-cardIndone">no card added</p>
+                <div id="text" class="text">
+                </div>
+                <button onclick="addInDone()" class="button-done" type="submit">+add new card</button>
+            </div>    
+        </main>
+        <script text="text/javascript" src="java.js"></script>
+        <script text="text/javascript" src="java2.js"></script>
+        <script text="text/javascript" src="java3.js"></script>
+        <script text="text/javascript" src="java0.js"></script>
+
+        <div id="note-text" class="note-text">
+            <p>Note text</p>
+            <input id="Palavras" class="Palavras" placeholder="note text" type="text">
+            <br>
+            <div class="button-note">
+                <button onclick="Cancel()" type="button" class="cancel">Cancel</button> 
+                <button onclick="Confirm()" type="button" class="confirm">Confirm</button>
+            </div> 
+        </div>
+        <div id="listTchange" class="listTchange">
+            <p>change the position of the note to: </p>
+            <div id="cards" class="cards">
+            </div>
+        </div>
+
+    </body>
+</html>

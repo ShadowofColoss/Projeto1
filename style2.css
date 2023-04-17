@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+header{
+    color: white;
+    text-align: center;
+    
+    padding: 3rem;
+}
+h1{
+    opacity: 0.9;
+}
+
+.header button {
+    margin-top: 1rem;
+    font-size: 1.1em;
+    padding: 14px 15px;
+    opacity: .9;
+    border: 0;
+    background-color: rgb(149, 149, 149);
+
+}
+
+body{
+    background-color: #121212;
+
+}
+
+main title {
+    color: white;
+    font-size: 2rem;
+    display: block;
+}
+
+.to-do{
+    background-color: brown;
+    padding: 12px 1rem;
+    border-radius: 10px;
+    width: 20rem;
+    position: absolute;
+    margin-left: 1rem;
+    word-break: break-all;
+}
+
+.doing{
+    background-color: chocolate;
+    padding: 12px 1rem;
+    border-radius: 10px;
+    width: 20rem;
+    position: absolute;
+    /* margin 18 */
+    margin-left: 23rem;
+    word-break:break-all;
+}
+
+.done{
+    background-color:cornflowerblue;
+    padding: 12px 1rem;
+    border-radius: 10px;
+    width: 20rem;
+    position: absolute;
+    margin-left: 45rem;
+    word-break: break-all;
+}
+
+button {
+    border: 0;
+    font-weight: bold;
+    color: white;
+}
+.button-to_do{
+    background-color: brown;
+    margin-top: 10px;
+
+}
+
+.button-doing{
+    background-color: chocolate;
+    margin-top: 10px;
+
+}
+
+.button-done{
+    background-color: cornflowerblue;
+    margin-top: 10px;
+}
+
+.note-text {
+    position: absolute;
+    background-color:white;
+    height: 10rem;
+    width: 28rem;
+    display: none;
+    border-radius: 7px; 
+    top: 45%; 
+    left: 38%;
+
+}
+
+.note-text p {
+    font-size: 2rem;
+    font-weight: bold;  
+    margin-left: 1rem;
+    height: 2rem;
+    width: 10rem;
+}
+
+.note-text input{
+    color: #121212;
+    width: 26rem;
+    margin-left: 1rem;
+    margin-top: 2rem;  
+    font-size: 1rem;  
+
+    border: 0 solid white;
+    border-bottom: 2px solid   rgb(65, 65, 216);
+    outline: 0;
+}
+
+.button-note{
+    height: 2rem;
+    width: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 16rem;
+}
+
+.note-text button{
+    color: rgb(50, 50, 228);
+    background-color: white;
+    width: 5rem;
+}
+
+.done .text{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    display: none;
+    border-radius: 4px;
+}
+
+.text  p {
+    background-color: white;
+    margin-top: 5px;
+    padding: 10px 10px;
+    font-size: 20px;
+
+    width: 70%;
+    min-height: 3rem;
+}
+
+.text .buttonToplayUp{
+    background-color: rgb(160, 154, 154);
+
+    border: 1px solid black;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+}
+
+.text .addinOtherCard {
+    /* border: 2px solid red; */
+    width: 9%;
+    min-height: 3rem;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.text .div_center {
+    width: 100%;
+    display: inline-flex;
+
+    
+}
+
+
+.text .div-x{
+    /* border: 2px solid yellow; */
+    width: 9%;
+    min-height: 3rem;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.text .div-x button{
+    background-color: rgb(160, 154, 154);
+    color: red;
+    margin-top: 5px;
+    /* font-size: 10px; */
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.text .div_elementR {
+    width: 9%;
+    min-height: 3rem;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.text .div_elementR button {
+    background-color: rgb(160, 154, 154);
+    color:blue;
+    margin-top: 5px;
+    /* font-size: 10px; */
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+} 
+
+.text .div_elementR .ButtonTchange {
+    background-color: rgb(160, 154, 154);
+    color: blue;
+    margin-top: 5px;
+    /* font-size: 10px; */
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;   
+}
+
+.listTchange{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    width: 30rem;
+    height: 8rem;
+    border-radius: 7px;
+    display: none;
+
+}
+
+.listTchange p {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.cards {
+    margin-left: 5px;
+    margin-top: 19px;
+}
+
+.cards button {
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.button1 {
+    background-color: brown;
+}
+
+.button2 {
+    background-color: chocolate;
+
+}
+.button3 {
+    background-color: cornflowerblue;
+
+}
